@@ -1,10 +1,18 @@
-# Overview
+# Spotify Music Recommendation System
+
+A machine learning project for music recommendation using Spotify dataset with advanced feature engineering and multiple ML algorithms including Deep Neural Networks.
+
+[![Python](https://img.shields.io/badge/Python-3.8+-blue.svg)](https://www.python.org/downloads/)
+[![Streamlit](https://img.shields.io/badge/Streamlit-App-red.svg)](https://streamlit.io/)
+[![TensorFlow](https://img.shields.io/badge/TensorFlow-2.x-ff6f00.svg)](https://tensorflow.org/)
+
+## Overview
 
 Intelligent music recommendation system that analyzes audio features to predict song popularity and provide personalized recommendations using SVR, KNN, and Deep Neural Networks.
 
 **Key Features:** Advanced feature engineering (18+ features), mood clustering, cyclic encoding, interactive Streamlit web app.
 
-## 📁 Project Structure
+## Project Structure
 
 ```
 Spotify_dataset_NTI/
@@ -12,7 +20,7 @@ Spotify_dataset_NTI/
 │   ├── raw/Spotify-dataset.csv
 │   └── procesed/modified-spotify-data.csv
 ├── deployment/
-│   ├── streamlit_app.py                          # Streamlit web app
+│   ├── streamlit_app.py                # Streamlit web app
 │   ├── Deployment_NoteBook.ipynb
 │   ├── feature_names.pkl
 │   ├── popularity_model.h5
@@ -37,7 +45,7 @@ Spotify_dataset_NTI/
 └── Spotify Presentation10.pdf
 ```
 
-## 🚀 Quick Start
+## Quick Start
 
 ### Installation
 ```bash
@@ -53,14 +61,13 @@ matplotlib, seaborn, plotly
 streamlit, jupyter, joblib
 ```
 
-## 🔧 Usage
+## Usage
 
 ### Option 1: Streamlit Web App (Recommended)
 ```bash
 cd deployment
-streamlit run app.py
+streamlit run streamlit_app.py
 ```
-
 **Features:** Interactive UI, real-time predictions, audio feature visualization, model comparison
 
 ### Option 2: Jupyter Notebook
@@ -71,12 +78,14 @@ jupyter notebook deployment/Deployment_NoteBook.ipynb
 ### Option 3: Full Training (Google Colab Recommended)
 Upload `04-(debolyed DNN)-Training-SVR_KNN_DNN.ipynb` to Google Colab for GPU-accelerated training.
 
-## 🧠 Models & Features
+## Models & Features
 
 ### ML Algorithms
-- **Support Vector Regression (SVR)** - RBF `rbf` kernels
+- **Support Vector Regression (SVR)** - RBF kernels
 - **K-Nearest Neighbors (KNN)** - Optimized distance metrics  
 - **Deep Neural Network (DNN)** - Multi-layer with dropout & batch normalization
+- **Random Forest** - Ensemble learning
+- **Logistic Regression** - Classification tasks
 
 ### Feature Engineering (18+ Features)
 - **Duration Features:** Log-transformed, standardized, classified
@@ -86,26 +95,25 @@ Upload `04-(debolyed DNN)-Training-SVR_KNN_DNN.ipynb` to Google Colab for GPU-ac
 - **Cyclic Encoding:** Musical key representation
 - **Audio Transformations:** Yeo-Johnson power transformation
 
-## 📊 Results
+## Results
 
 Comprehensive model comparison with MAE, RMSE, and R² scores. DNN shows superior performance with 15-25% improvement from feature engineering.
 
+## Streamlit App Features
 
-## 🌐 Streamlit App Features
+- Manual input with sliders
+- CSV upload for batch predictions
+- Random song generator
+- Interactive visualizations
+- Real-time predictions
+- Link to share as long deployment notebook is running
 
--   Manual input with sliders
--   CSV upload for batch predictions
--   Random song generator
--   Interactive visualizations
--   Real-time predictions
--   Link to share as long deployment notebook is running
-
-## 📝 Documentation
+## Documentation
 
 - **Processing Logs:** `logs/Preprocessing logs.md` - Complete pipeline documentation
 - **Notebooks:** Detailed markdown and code comments throughout
 
-## 👨‍💻 Contributors
+## Contributors
 
 **Mohamed Sha3rawy**
 - GitHub: [@Mhmd-sh3rawy](https://github.com/Mhmd-sh3rawy)
@@ -114,18 +122,18 @@ Comprehensive model comparison with MAE, RMSE, and R² scores. DNN shows superio
 - GitHub: [@Elmougi](https://github.com/Elmougi)
 
 **Mazen Abdallah**
-- GitHub: [Mazen657](https://github.com/Mazen657)
+- GitHub: [@Mazen657](https://github.com/Mazen657)
 
 **Ahmed Adel**
 - GitHub: [@Ahmedd226](https://github.com/Ahmedd226)
 
 **Ahmed Ayman**
-- GitHub: [@Ahmed_Ayman](https://github.com/AhmedAyman12gh)
+- GitHub: [@AhmedAyman12gh](https://github.com/AhmedAyman12gh)
 
-## 🙏 Acknowledgments
+## Acknowledgments
 
 - NTI (National Telecommunication Institute) for project guidance
 
 ---
 
-⭐ **Star this repo if you find it helpful!** ⭐
+**Star this repo if you find it helpful!**
