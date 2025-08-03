@@ -1,0 +1,5 @@
+src/__pychache__/
+__pychache__
+*.cpy
+*.__pychache__
+*.pyc
